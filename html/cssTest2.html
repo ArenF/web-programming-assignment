@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS 테스트2</title>
+
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            li {
+                float: left;
+                padding: 20px;
+                list-style: none;
+            }
+
+            li:nth-child(2) {
+                background-color: blue;
+            }
+            li:nth-child(2n+1) {
+                background-color: pink;
+            }
+            li:first-child {
+                color: red;
+                color: rgb(143, 4, 4);
+                color: rgba(143, 4, 4, 0.5); opacity: 0.5;
+            }
+            li:last-child {
+                color: white;
+            }
+
+            .big {
+                font-size: 22px;
+                width: 200px;
+                height: 175px;
+                border-top: 3px solid red;
+                border-right: 3px solid red;
+                border-left: 3px solid red;
+                border-bottom: 3px solid red;
+            }
+
+            .big > h2 {
+                font-size: 2em; /* 44px */
+            }
+            .big div h2 {
+                font-size: 2rem; /* html 사이즈에 따라 변경 */
+            }
+            .box {
+                width: 200px;
+                height: 200px;
+                border: 2px solid red;
+                margin: 20px;
+                padding: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="box">
+            영역테스트
+        </div>
+
+        <div class="big">
+            <h2>크기단위 테스트</h2>
+            <div>
+                <h2>크기 체크</h2>
+            </div>
+        </div>
+
+        <h2>구조 선택자</h2>
+        <ul>
+            <li>1</li>
+            <li class="bg">2</li>
+            <li>3</li>
+            <li class="bg">4</li>
+            <li>5</li>
+            <li class="bg">6</li>
+            <li>7</li>
+        </ul>
+    </body>
+</html>
